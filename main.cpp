@@ -6,6 +6,7 @@ int main()
 {
   char input;
   vector <string> list;
+	int count;
 
   do
   {
@@ -23,8 +24,11 @@ int main()
         cin.ignore();
         getline(cin,item);
         list.push_back(item);
+				count++;
     }
   }while( input != 'q' && input != 'Q' );
+
+	cout << "Items entered: " << count << endl;
     
   return 0;
 }
